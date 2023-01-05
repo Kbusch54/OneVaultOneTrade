@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-slate-800;
+}
+.shadow-box {
+  background: linear-gradient(hsl(300, 50%, 20%), hsl(300, 50%, 10%));
+  padding: 2rem 0.5rem;
+  text-align: left;
+  color: hsl(300, 50%, 95%);
+}
+
+.bg-purple {
+  /* ff 3.6+ */
+  background: -moz-radial-gradient(
+    circle at 100% 100%,
+    rgba(160, 0, 255, 1) 0%,
+    rgba(149, 0, 212, 1) 6%,
+    rgba(29, 37, 48, 1) 33%
+  );
+
+  /* safari 5.1+,chrome 10+ */
+  background: -webkit-radial-gradient(
+    circle at 100% 100%,
+    rgba(160, 0, 255, 1) 0%,
+    rgba(149, 0, 212, 1) 6%,
+    rgba(29, 37, 48, 1) 33%
+  );
+
+  /* opera 11.10+ */
+  background: -o-radial-gradient(
+    circle at 100% 100%,
+    rgba(160, 0, 255, 1) 0%,
+    rgba(149, 0, 212, 1) 6%,
+    rgba(29, 37, 48, 1) 33%
+  );
+
+  /* ie 10+ */
+  background: -ms-radial-gradient(
+    circle at 100% 100%,
+    rgba(160, 0, 255, 1) 0%,
+    rgba(149, 0, 212, 1) 6%,
+    rgba(29, 37, 48, 1) 33%
+  );
+
+  /* global 92%+ browsers support */
+  background: radial-gradient(
+    circle at 100% 100%,
+    rgba(160, 0, 255, 1) 0%,
+    rgba(149, 0, 212, 1) 6%,
+    rgba(29, 37, 48, 1) 33%
+  );
+}
+
+"dev":"concurrently\"nextdev--turbo\"\"tailwindcss--inputinput.css--outputoutput.css--watch\"","build": "tailwindcss input.css --output output.css && next build";
